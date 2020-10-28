@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="keywords" content="">
+    <title>제목을 입력하세요</title>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" href="./static/css/common.css">
+    <link rel="stylesheet" href="./static/css/import.css">
+</head>
+<body> <!--  style="height:1500px;" -->
+    <div id="skipnavi">
+        <a href="#gnb" class="shortcut_g">네이게이션 바로가기</a>
+        <a href="#cMain" class="shortcut_g">본문영역 바로가기</a>
+    </div>
+    <header>
+        <div class="top main_top">
+                <a href="/" class="go_home_btn"><img src="./static/images/ico_home.png" alt="메인으로">홈</a>
+                <h1><img src="./static/images/logo.png" alt="월곡문화지도로고"></h1>
+                <a href="javascript:;" class="open_menu_btn"><img src="./static/images/ico_nav_btn.png" alt="메뉴열기">메뉴</a>
+            </div>
+            
+            <nav class="gnb_menu_wrap" id="gnb">
+                <div class="gnb_menu">
+                    <a href="javscript:;" class="close_menu_btn"><img src="./static/images/ico_close_btn.png" alt="메뉴 닫기"></a>
+                    <h2>카테고리</h2>
+                    <ul class="nav_list">
+                        <li><a href="javascript:;">기념일</a></li>
+                        <li><a href="javascript:;">술모임</a></li>
+                        <li><a href="javascript:;">회식</a></li>
+                        <li><a href="javascript:;">데이트</a></li>
+                        <li><a href="javascript:;">혼밥혼술</a></li>
+                        <li><a href="javascript:;">가성비</a></li>
+                        <li><a href="javascript:;">조용한</a></li>
+                        <li><a href="javascript:;">이국적</a></li>
+                        <li><a href="javascript:;">로컬맛집</a></li>
+                    </ul>
+                    <a href="javascript:;" class="btn btn_white notice_btn ">공지사항</a>
+                    <div class="sns_btn_wrap">
+                        <a href="javascript:;"><img src="./static/images/ico_sns_i.png" alt="인스타그램 바로가기"></a>
+                        <a href="javascript:;"><img src="./static/images/ico_sns_f.png" alt="페이스북 바로가기"></a>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        
+        <div id="cMain">
+            <div class="main">
+                <div class="main_visual">
+                    <div class="inner_wrap">
+                        <div class="sch_form">
+                            <input type="text">
+                            <button><img src="./static/images/ico_sch.png" alt="검색하기"></button>
+                        </div>
+                    </div>             
+                </div>
+                <section>
+                    <div class="inner_wrap">
+                        <h3 class="main_title">카테고리</h3>
+                        <div class="category_wrap">
+                            <button>전체</button>
+                            <button>술모임</button>
+                            <button>회식</button>
+                            <button>데이트</button>
+                            <button>기념일</button>
+                            <button>혼밥혼술</button>
+                            <button>가성비</button>
+                            <button>조용한</button>
+                            <button>이국적</button>
+                            <button>로컬맛집</button>
+                        </div>
+                    </div>
+                </section>
+
+                <div class="quick_wrap">
+                    <div class="row_group col_3 btn_wrap">
+                        <a href="javascript:;" class="col">혜화 공연예술<br>캠퍼스</a>
+                        <a href="javascript:;" class="col">청담 디자인<br>캠퍼스</a>
+                        <a href="javascript:;" class="col">인사이트<br>센터</a>
+                    </div>
+                </div>
+
+                <section>
+                    <div class="inner _wrap notice_con">
+                        <h3 class="main_title">공지사항 <i class="ico_comm icon_"></i></h3>
+                        <div class="slick_slide">
+                            <div class="content">
+                                <strong class="title">월곡문화지도 모바일 앱 오픈!</strong>
+                                <p>월곡문화지도 모바일 앱이 새로 오픈했습니다.</p>
+                            </div>
+                            <div class="content">
+                                <strong class="title">월곡문화지도 모바일 앱 오픈!</strong>
+                                <p>월곡문화지도 모바일 앱이 새로 오픈했습니다.</p>
+                            </div>
+                            <div class="content">
+                                <strong class="title">월곡문화지도 모바일 앱 오픈!</strong>
+                                <p>월곡문화지도 모바일 앱이 새로 오픈했습니다.</p>
+                            </div>
+                            <div class="content">
+                                <strong class="title">월곡문화지도 모바일 앱 오픈!</strong>
+                                <p>월곡문화지도 모바일 앱이 새로 오픈했습니다.</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+        <footer>
+            <div class="inner_wrap_m">
+                <p class="copyrigth">COPYRIGHT ⓒ 2020 DAC. ALL RIGHTS RESERVED.</p>
+            </div>
+        </footer>
+
+</body>
+
+<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $('.notice_con .slick_slide').slick({
+            arrows:false,
+            infinite: false,
+        });
+    });
+</script>
+</html>
